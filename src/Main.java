@@ -3,6 +3,7 @@ public class Main {
         int i3 =berechnen(2,4);
         int i5 =berechnen(i3, 25);
        berechnen(i5,-5);
+        wort();
 
     }
     public static void konsolenAusgabe(boolean b){
@@ -47,5 +48,19 @@ public class Main {
         System.out.println(c);
         return c;
     }
+    public static void wort(){
+        int i =200;
+        String zeichenkette ="Alles klar," + i;
+        System.out.println(zeichenkette + " Herr Kommissar?"+ (i+i));
+        float f =2.5f;
+        int i2 = (int) f;
+        System.out.println(i2); // die 0.5 geht verloren. Das liegt am casting von float zu int
+
+        String s = "2.5";
+        //int i3 = Integer.parseInt(s);
+        float f3 = Float.parseFloat(s);
+    }
+
+
 }
 
