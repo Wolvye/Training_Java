@@ -23,11 +23,12 @@ public class Main {
         //Berechnen von Daten
         float trinkgeld =rechnung *(prozent /100f);
         float rechnungGes = rechnung + trinkgeld;
-
+        float rechnungProPerson = rechnungGes/personen;
 
         //Ausgeben von Daten
         System.out.println("Ihr möchtet " + trinkgeld + " Trinkgeld geben.");
-        System.out.println("Somit zahlt ihr " +  rechnungGes + ".");
+        System.out.println("Somit zahlt ihr " +  rechnungGes + "€.");
+        System.out.println("Jeder von euch Zahlt" +rechnungProPerson + "€.");
     }
 
 }
