@@ -1,28 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-       int i1 =2;
-       int i2=4;
-        int i3= i1+i2;
-       erstetzen(i1, i2);
-        System.out.println(i3);
-        int i4 =25;
+        int i3 =berechnen(2,4);
+        int i5 =berechnen(i3, 25);
+       berechnen(i5,-5);
 
-
-        int i5 =i3 +i4;
-        System.out.println(i5);
-        int i6=-5;
-
-        int i7= i5-i6;
-        System.out.println(i7);
-
-        ersteMethode();
-        neueMethode(i7);
-        mehrereArgumente(2.0f , false);
-        dreiArgumente(2,5,false);
-        int i = subtrahieren(2,3);
-        System.out.println(i);
     }
+    public static void konsolenAusgabe(boolean b){
+        if (b){
+            System.out.println("Der Wert ist wahr!");
 
+        }else{
+            System.out.println("Der Wert ist Falsch!");
+        }
+    }
     public static void ersteMethode() {
         System.out.println("Hallo Welt!");
     }
@@ -50,6 +40,11 @@ public class Main {
 
     public static int subtrahieren(int a, int b){
         int c = a-b;
+        return c;
+    }
+    public static int berechnen(int a, int b){
+        int c=a+b;
+        System.out.println(c);
         return c;
     }
 }
