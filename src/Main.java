@@ -3,7 +3,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args){
+
+       //Scanner sind zum einlesen der Eingabe da.
         //Einlesen von Konsole
+
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Bitte gib den Rechnungsbetrag ein");
